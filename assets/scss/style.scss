@@ -1,0 +1,72 @@
+/* -----------------------------------------------------------------------------------
+
+    Template Name: Poco - Agency Bootstrap 4 HTML5 Template
+    Template URI: zakirsoft.com
+    Description: Agency - Agency Bootstrap 4 HTML5 Template
+    Author: Templatecookie
+    Author URI: https://templatecookie.com
+    Version: 1.0
+
+--------------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01. Theme default CSS	
+    02. Header CSS	
+    03. Banner CSS	
+    04. Brand CSS	
+    05. About CSS	
+    06. Skill CSS	
+    07. Services CSS	
+    08. Pricing CSS		
+    09. Call To Action CSS	
+    10. Testimonial CSS		
+    11. Newsletter	
+    12. Contact CSS	
+    13. Testimonial CSS	
+    14. Client CSS	
+    15. Team CSS	
+    16. Breadcrumb CSS	
+    17. Footer CSS
+
+----------------------------------------------------------------------------------- */
+
+@import 'typography';
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+// Components
+@import 'components/header';
+@import 'components/mobileMenu';
+@import 'components/searchBox';
+@import 'components/banner';
+@import 'components/brand';
+@import 'components/map';
+
+@import 'about-info';
+@import 'skill';
+@import 'special-services';
+@import 'services-introduction';
+@import 'price';
+@import 'callto-action';
+@import 'testimonial';
+@import 'review-testimonial';
+@import 'newsletter';
+@import 'client';
+@import 'team-member';
+@import 'breadcrumb';
+@import 'projectSlider';
+@import 'footer';
+
+// Pages
+@import 'page/aboutus';
+@import 'page/services';
+@import 'page/team-member';
+@import 'page/project';
+@import 'page/contact';
+@import 'page/blog';
+
+// Responsive Sites
+@import 'components/responsive';

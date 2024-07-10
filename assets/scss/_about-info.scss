@@ -1,0 +1,1104 @@
+/*----------------------------------------*/
+/* HOMEPAGE 01
+/*----------------------------------------*/
+
+.about-info {
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 125px;
+  &-image {
+    margin-left: -190px;
+  }
+
+  &-text {
+    h2 {
+      font-family: $gilroy-bold;
+      max-width: 530px;
+      line-height: 64px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 35px;
+      font-family: $gilroy-medium;
+      color: #65729e;
+    }
+  }
+
+  &-project {
+    padding-top: 35px;
+    border-top: 1px solid #b4c1e9;
+
+    .project-rating {
+      h3 {
+        font-size: 34px;
+        line-height: 42px;
+        font-family: $gilroy-bold;
+      }
+
+      &-star {
+        margin-top: 2px;
+
+        i {
+          color: #ff8b17;
+        }
+      }
+    }
+
+    .project-information {
+      h3 {
+        margin-top: 2px;
+        font-size: 34px;
+        margin-bottom: 8px !important;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: $gilroy-medium;
+      }
+    }
+  }
+
+  .mask-group {
+    .mask1 {
+      position: absolute;
+      right: 0px;
+      bottom: 135px;
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/* HOMEPAGE 02
+/*----------------------------------------*/
+.aboutus02 {
+  padding: 65px 0px 165px 0px;
+  position: relative;
+  &-wrapper {
+    max-width: 93%;
+
+    &-title {
+      h2 {
+        line-height: 64px;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        font-family: $gilroy-medium;
+        line-height: 30px;
+        display: inline-block;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          font-family: $gilroy-medium;
+          line-height: 30px;
+          margin-bottom: 18px;
+
+          img {
+            border: 1px solid #ff465e;
+            border-radius: 50%;
+            padding: 6px 4px;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      margin-bottom: 35px;
+    }
+  }
+
+  &-image {
+    position: relative;
+    margin-left: 30px;
+    img {
+      width: 516px;
+      height: 686px;
+      border-radius: 101px;
+      border-top-left-radius: 0;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 30px;
+      border: 5px solid $white;
+      right: 30px;
+      width: 516px;
+      height: 693px;
+      border-radius: 101px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 63px;
+      border: 5px solid #ff465e;
+      right: -100px;
+      width: 455px;
+      height: 654px;
+      border-radius: 101px;
+      z-index: -99;
+    }
+  }
+
+  .small-feature {
+    position: absolute;
+    bottom: 285px;
+    right: 38.5%;
+  }
+}
+
+//About introduction 02
+.aboutus-introduction02 {
+  position: relative;
+
+  .aboutus-introduction02-image {
+    position: relative;
+
+    img {
+      width: 516px;
+      height: 686px;
+      object-fit: cover;
+      border-radius: 101px;
+      border-top-right-radius: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 30px;
+      border: 5px solid $white;
+      left: 30px;
+      width: 516px;
+      height: 693px;
+      border-radius: 101px;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &::before {
+      left: -30px;
+      content: '';
+      position: absolute;
+      top: 68px;
+      border: 5px solid #ff465e;
+      width: 455px;
+      height: 654px;
+      border-radius: 101px;
+      z-index: -99;
+    }
+  }
+
+  .introduction-feature {
+    position: absolute;
+    bottom: 22%;
+    left: 39.5%;
+  }
+  .aboutus02-wrapper {
+    max-width: 94%;
+    margin-left: 10px;
+    margin-left: 125px;
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.about-info04 {
+  padding-top: 115px;
+  padding-bottom: 27px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .about-info-image {
+    margin-left: -257px;
+  }
+  .about-info-text {
+    h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 60px;
+      font-family: $teko;
+      line-height: 118px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      span {
+        color: $tertiary;
+      }
+    }
+
+    p {
+      font-family: $hind;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+      position: relative;
+      z-index: 9;
+      color: #9DADB7;
+    }
+
+    .about-info-project {
+      padding-top: 0px;
+      border-top: 0;
+
+      .project-information {
+        margin-top: 20px;
+
+        h3 {
+          font-size: 60px;
+          line-height: 34px;
+          font-weight: 600;
+          font-family: $teko;
+          color: $tertiary;
+          margin: 0;
+        }
+
+        p {
+          font-family: $hind;
+          font-size: 20px;
+          line-height: 34px;
+          color: #9dadb7;
+        }
+      }
+    }
+  }
+
+  .right-vcetor {
+    img {
+      position: absolute;
+      top: 31%;
+      right: 5%;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.homepage-03 {
+  &.about-introduction {
+    padding-bottom: 230px;
+  }
+
+  .sub-section-heading {
+    margin-top: 75px;
+    p {
+      font-size: 18px;
+      font-family: $gilroy-medium;
+    }
+  }
+
+  .work-process {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      width: 50%;
+      i {
+        color: #ed880a;
+        width: 25px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .about-intro-left {
+    position: relative;
+
+    .image {
+      position: relative;
+      margin-left: 25px;
+      .about01 {
+        border-top-right-radius: 75px;
+        width: 490px;
+        height: 550px;
+        object-fit: cover;
+      }
+
+      .about02 {
+        position: absolute;
+        bottom: -25%;
+        left: 65%;
+        background-color: #fff;
+        border: 13px solid #ffff;
+        border-top-left-radius: 85px;
+        width: 395px;
+        height: 495px;
+        object-fit: cover;
+      }
+    }
+
+    .award {
+      position: absolute;
+      bottom: -75px;
+      left: 215px;
+      width: 185px;
+      height: 185px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #ffffff;
+
+      &-icon {
+        i {
+          font-size: 55px;
+          color: #ed880a;
+        }
+      }
+
+      h6 {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  Our-Teams
+/*----------------------------------------*/
+.our-teams {
+  padding-bottom: 160px;
+  .our-teams-member {
+    .member-info {
+      .name {
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* Common max-Sizes */
+
+@media (min-width: 1201px) and(max-width: 1850px) {
+  .about-info04 {
+    .right-vcetor {
+      img {
+        right: 0%;
+      }
+    }
+    .about-info-image {
+      margin-left: 0px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    &-info {
+      &-image {
+        margin-left: 0px;
+      }
+      .mask-group {
+        .mask1 {
+          bottom: 0px;
+        }
+      }
+    }
+  }
+
+  // Homepage-02 / Aboutus-02
+  .aboutus02 {
+    padding-bottom: 90px;
+    .small-feature {
+      bottom: 30.1%;
+      right: 30.5%;
+    }
+    &-wrapper-title {
+      h2 {
+        line-height: 48px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .aboutus02-image {
+    &::before {
+      right: -10px;
+      top: 30px;
+    }
+    &::after {
+      bottom: 0;
+      right: -4px;
+    }
+  }
+
+  // Homepage-02 / Aboutus-introduction
+  .aboutus-introduction02 {
+    .aboutus-introduction02-image {
+      margin-left: 0px;
+      img {
+        width: 516px;
+        height: 686px;
+        border-radius: 101px;
+        border-top-left-radius: 0;
+        object-fit: cover;
+      }
+    }
+    .introduction-feature {
+      left: 33.5%;
+    }
+  }
+
+  // homepage -03 / Aboutus -info
+  .about-info04 {
+    .about-info-image {
+      margin-left: 0px;
+      img {
+        max-width: 100%;
+      }
+    }
+    .right-vcetor {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .homepage-03 {
+    &.about-introduction {
+      .about-intro-left {
+        .image {
+          margin-left: 0px;
+          img {
+            max-width: 100%;
+          }
+          .about02 {
+            display: none;
+          }
+        }
+        .award {
+          bottom: 65px;
+          left: -90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutus-introduction02 {
+    .aboutus02-wrapper {
+      &-title {
+        h2 {
+          line-height: 52px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .small-feature {
+      bottom: 25%;
+      left: 42%;
+    }
+  }
+
+  // .homepage-03
+  .homepage-03.about-introduction {
+    padding-bottom: 120px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .about-info04 {
+    .right-vcetor {
+      img {
+        top: 25%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .aboutus-introduction02 {
+    .aboutus02-wrapper {
+      max-width: 100%;
+      margin-left: 110px;
+    }
+    .aboutus-introduction02-image {
+      &::before {
+        top: -2px;
+        left: 20px;
+      }
+      &::after {
+        left: 0px;
+        bottom: 0px;
+        z-index: -999;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and(max-width: 1023px) {
+  // homepage-02
+  .aboutus02 {
+    .small-feature {
+      bottom: 26.1%;
+      right: 40%;
+    }
+  }
+
+  // .homepage-03
+  .about-info {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  // Homepage-01
+  .about-info {
+    padding-bottom: 0px !important;
+  }
+
+  //  Homepage-03
+  .about-info04 {
+    padding-bottom: 0px !important;
+    .about-info-image {
+      margin-bottom: 0px !important;
+    }
+    .about-info-text {
+      h2 {
+        line-height: 76px;
+        padding-bottom: 0px !important;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  // homepage-02
+  .aboutus-introduction02 {
+    .aboutus02 {
+      &-wrapper {
+        max-width: 100%;
+        margin-left: 0px;
+      }
+    }
+
+    .aboutus-introduction02-image {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+  // aboutus-introduction02-image
+  .aboutus02 {
+    &-image {
+      display: flex;
+      justify-content: center;
+      &::before,
+      &::after {
+        display: none;
+      }
+      // &::before {
+      //   right: 140px;
+      //   top: 30px;
+      //   z-index: 1;
+      // }
+      // &::after {
+      //   right: 125px;
+      // }
+    }
+    .small-feature {
+      display: none;
+      bottom: 62%;
+      right: 10%;
+      z-index: 9;
+    }
+    &-wrapper-title {
+      h2 {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .about-info04 {
+    .right-vcetor {
+      img {
+        top: 60%;
+      }
+    }
+  }
+
+  .about-skill {
+    &-image {
+      img {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .homepage-03 {
+    &.about-introduction {
+      // padding-bottom: 90px;
+      .about-intro-left {
+        .image {
+          display: flex;
+          justify-content: center;
+        }
+        .award {
+          bottom: 65px;
+          left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    &-info {
+      padding-top: 60px;
+      padding-bottom: 0px;
+      &-text {
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+    }
+  }
+
+  // Homepage -02 / About us
+  .aboutus02 {
+    .small-feature {
+      right: 5%;
+    }
+
+    &-image {
+      &::before {
+        right: 30px;
+      }
+      &::after {
+        right: -1px;
+      }
+    }
+  }
+
+  // Homepage-02 / aboutus-introduction02
+  .aboutus-introduction02 {
+    .aboutus-introduction02 {
+      &-image {
+        &::before {
+          top: 32px !important;
+          left: 0px;
+          z-index: 1;
+        }
+        &::after {
+          left: -5px !important;
+          bottom: -2px !important;
+          border-radius: 101px !important;
+          width: 523px;
+        }
+      }
+    }
+    .small-feature {
+      left: 70%;
+    }
+  }
+
+  .about-skill {
+    &-wrapper {
+      max-width: 100% !important;
+      margin-top: 0px !important;
+    }
+    &-title {
+      h2 {
+        line-height: 42px;
+      }
+    }
+    &-pogressbar {
+      justify-content: center;
+    }
+  }
+
+  .our-teams {
+    &-member {
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      margin: auto;
+    }
+    .all-member {
+      .member-info {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 575px) and(max-width: 767px) {
+  .about-info {
+    .mask-group {
+      .mask1 {
+        bottom: -115px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    &-info {
+      &-text {
+        margin-top: 30px;
+      }
+      .mask-group {
+        .mask1 {
+          bottom: -105px;
+        }
+      }
+    }
+  }
+
+  // Homepage-02 / Aboutus
+  .aboutus02 {
+    .small-feature {
+      right: 65%;
+      bottom: 46%;
+    }
+
+    &-wrapper-title {
+      h2 {
+        font-size: 26px;
+        line-height: 36px !important;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &-image {
+      margin-left: 0px;
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+  // Homepage-02 / aboutus-introduction
+  .aboutus-introduction02 {
+    .aboutus02-wrapper {
+      margin-left: 0px;
+    }
+    &-image {
+      margin-left: 0px !important;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    .small-feature {
+      left: 2%;
+    }
+  }
+
+  .about-info04 {
+    .about-info-text {
+      .about-info-project {
+        .project-information {
+          z-index: 9;
+        }
+      }
+    }
+  }
+
+  .homepage-03 {
+    .sub-section-heading {
+      h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+    }
+    &.about-introduction {
+      .about-intro-left {
+        .award {
+          width: 125px;
+          height: 125px;
+          bottom: 0px;
+          left: inherit;
+          right: -5px !important;
+        }
+      }
+    }
+    .work-process {
+      flex-direction: column;
+      &-item {
+        i {
+          font-size: 32px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  .our-teams {
+    &-member {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+  // Homepage-01
+  .about-info {
+    &-text {
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    &-project {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .mask-group {
+      display: none;
+      .mask1 {
+        bottom: -100px;
+      }
+    }
+  }
+  // homepage-02
+  .aboutus-introduction02 {
+    .aboutus-introduction02-image {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .small-feature {
+      bottom: 60.5%;
+      left: 0px;
+      width: 100%;
+      height: 150px;
+      &-text {
+        p {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .aboutus02-wrapper {
+      margin-top: 0px;
+      &-list {
+        ul {
+          li {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+  // .homepage-03
+  .about-info04 {
+    .about-info-text {
+      h2 {
+        font-size: 38px;
+        line-height: 52px;
+      }
+      .about-info-project {
+        margin-top: 45px;
+        .project-information {
+          margin: 0px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and(max-width: 419px) {
+  // our-teams
+  .our-teams {
+    .all-member {
+      .col-lg-4 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .social-links {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .about-skill {
+    &-pogressbar {
+      .round-wrapper {
+        margin-right: 0px !important;
+      }
+    }
+  }
+
+  .homepage-03 {
+    .sub-section-heading {
+      h2 {
+        font-size: 32px;
+        line-height: 42px;
+      }
+    }
+    &.about-introduction {
+      .about-intro-left {
+        .award {
+          top: inherit;
+          bottom: -45px;
+          &-icon {
+            i {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+  /* common area start */
+  .about-info-project .project-rating h3,
+  .about-info-project .project-information h3 {
+    font-size: 30px;
+  }
+  .about-info-text {
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+  }
+  .about-info-image {
+    margin-left: 0;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+  .about-info {
+    .about-info-image {
+      margin-left: 0px;
+      margin-bottom: 50px;
+    }
+    .about-info-text {
+      h2 {
+        min-width: 100%;
+        padding-bottom: 20px;
+      }
+    }
+    .about-info-project {
+      padding-top: 20px;
+    }
+    .about-info-project .project-rating h3,
+    .about-info-project .project-information h3 {
+      font-size: 28px;
+    }
+    // mask-group
+    .mask-group {
+      .mask1 {
+        bottom: -25px;
+      }
+    }
+  }
+  // Homepage-02 / About-us-introduction-02
+  .aboutus-introduction02 {
+    &-image {
+      &::before {
+        z-index: 1 !important;
+        left: 65px !important;
+        top: 0px !important;
+        height: 690px !important;
+      }
+      &::after {
+        border-radius: 101px !important;
+        left: 30px !important;
+        bottom: -2px !important;
+      }
+    }
+    .small-feature {
+      left: 69%;
+    }
+  }
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+  /* common area start */
+  .about-info {
+    .about-info-image {
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+  // Homepage-02 / About-us
+  .aboutus02 {
+    &-image {
+      &::before {
+        right: 2px;
+      }
+    }
+    .small-feature {
+      right: 52%;
+      bottom: 48%;
+    }
+  }
+}

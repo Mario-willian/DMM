@@ -1,0 +1,746 @@
+//WORK SOLUTION AREA
+.about-solution {
+  background-color: #fff5f7;
+  padding: 130px 0;
+  margin: 0 45px;
+  border-radius: 24px;
+  position: relative;
+  .section-title {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
+  .solution-wrapper {
+    .solution-title {
+      h4 {
+        span {
+          color: $tertiary;
+        }
+
+        margin-bottom: 10px;
+      }
+
+      &.center {
+        text-align: center;
+        margin: auto;
+        max-width: 30%;
+      }
+
+      &.left {
+        text-align: right;
+        max-width: 92%;
+      }
+
+      &.right {
+        p {
+          max-width: 92%;
+        }
+      }
+    }
+  }
+
+  .mask-group {
+    img {
+      position: absolute;
+    }
+
+    .mask1 {
+      top: -5%;
+      left: 5%;
+    }
+
+    .mask2 {
+      top: -4%;
+      right: 10%;
+    }
+
+    .mask3 {
+      bottom: -40px;
+      left: 10%;
+    }
+  }
+}
+
+//ABOUT SKILL AREA
+.about-skill {
+  &-wrapper {
+    max-width: 90%;
+    margin-top: 145px;
+    .about-skill-title {
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-family: $gilroy-medium;
+        font-size: 18px;
+        line-height: 20px;
+        line-height: 30px;
+      }
+
+      margin-bottom: 50px;
+    }
+
+    .about-skill-pogressbar {
+      display: flex;
+      align-items: center;
+
+      .round-wrapper {
+        margin-right: 120px;
+        text-align: center;
+
+        .round {
+          position: relative;
+
+          .round-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            strong {
+              color: $primary;
+              font-family: $gilroy-bold;
+              font-size: 45px;
+              line-height: 55px;
+            }
+          }
+        }
+
+        .skill-text {
+          margin-top: 20px;
+
+          p {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// START ABOUT US
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 145px;
+  &-image {
+    position: relative;
+
+    .image {
+      margin-top: 5px;
+      margin-left: -205px;
+    }
+
+    .small-feature {
+      position: absolute;
+      height: 120px;
+      width: 120px;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &.sm-feauter-bottom {
+        box-shadow: 0px 6px 30px #5746ff73;
+      }
+      &.sm-feauter-left {
+        box-shadow: 0px 6px 15px #4dadf77a;
+      }
+      &.sm-feauter-top {
+        box-shadow: 0px 6px 15px #fab00594;
+      }
+      &-item {
+        h3 {
+          color: #ffffff;
+          font-size: 34px;
+        }
+
+        .ratings {
+          color: #ffffff;
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #ffffff;
+          font-family: $gilroy-medium;
+        }
+      }
+    }
+
+    .sm-feauter-top {
+      top: -85px;
+      left: 75px;
+    }
+
+    .sm-feauter-left {
+      top: 225px;
+      left: -240px;
+    }
+
+    .sm-feauter-bottom {
+      bottom: -65px;
+      left: 210px;
+    }
+  }
+  &.our-services {
+    .about-us-text {
+      margin-top: -50px;
+    }
+  }
+  &-text {
+    margin-top: -20px;
+    margin-left: -20px;
+    .sub-heading {
+      margin-bottom: 45px;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: $gilroy-medium;
+      }
+    }
+
+    .feature {
+      margin-bottom: 20px;
+      .icon {
+        height: 30px;
+        width: 30px;
+        border-radius: 9px;
+        margin-top: 5px;
+        padding: 15px;
+
+        i {
+          color: #ffffff;
+        }
+      }
+
+      .text {
+        h6 {
+          font-size: 18px;
+        }
+
+        p {
+          font-family: $gilroy-medium;
+        }
+      }
+    }
+    // custom-wrapper for buisness solutions
+    .c-wrapper {
+      display: inline-block;
+    }
+
+    .alart {
+      position: relative;
+      background-color: #fff5f7;
+      max-width: 490px;
+      padding: 15px 50px 15px 25px;
+      border-radius: 6px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: #ff465e;
+        width: 7px;
+        height: 100%;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+
+      &-icon {
+        margin-right: 20px;
+        i {
+          color: #65729e;
+          font-size: 50px;
+        }
+      }
+
+      &-text {
+        p {
+          color: #000560;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: $gilroy-medium;
+          margin-right: 20px;
+        }
+      }
+
+      &-boldtext {
+        margin-left: 0px;
+        h2 {
+          color: #ff465e;
+          font-size: 55px;
+        }
+      }
+    }
+  }
+}
+// END ABOUT US
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/*common devices- sizes */
+@media (max-width: 1200px) {
+  .about-us {
+    &.our-services {
+      padding-bottom: 60px;
+    }
+    &-image {
+      img {
+        max-width: 100%;
+      }
+      .image {
+        margin-left: 0px;
+      }
+      .sm-feauter-left {
+        left: 0px;
+      }
+      .sm-feauter-top {
+        top: -95px;
+        left: 215px;
+      }
+      .sm-feauter-bottom {
+        left: 330px;
+      }
+    }
+    &-text {
+      margin-left: 0px;
+      .sub-heading {
+        p {
+          max-width: 100%;
+        }
+      }
+      .feature {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .about-skill {
+    padding: 90px 0px;
+    &-wrapper {
+      margin-top: -30px;
+    }
+    &-image {
+      img {
+        max-width: 100%;
+      }
+    }
+    &-pogressbar {
+      .round-wrapper {
+        margin-right: 30px;
+        .round {
+          canvas {
+            width: 130px !important;
+            height: 130px !important;
+          }
+          &-text {
+            strong {
+              font-size: 32px !important;
+              line-height: 32px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .about-us {
+    padding-bottom: 90px;
+    &-image {
+      .sm-feauter-top {
+        left: 175px;
+      }
+      .sm-feauter-left {
+        top: 155px;
+        left: -30px;
+      }
+      .sm-feauter-bottom {
+        left: 270px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .about-us {
+    &-image {
+      .sm-feauter-left {
+        top: 155px;
+      }
+      .sm-feauter-top {
+        left: 165px;
+      }
+      .sm-feauter-bottom {
+        left: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about-us {
+    padding: 90px 0px;
+    &-text {
+      margin-top: 60px;
+      .sub-heading {
+        margin-bottom: 30px;
+        h2 {
+          margin-bottom: 0px;
+        }
+      }
+      .c-wrapper {
+        margin-top: 0px;
+      }
+      .feature {
+        margin-bottom: 15px;
+      }
+    }
+    // Services
+    &.our-services {
+      margin: 0px !important;
+      .about-us-text {
+        margin-top: 0px;
+        .sub-heading h2 {
+          max-width: 100%;
+        }
+      }
+      .about-us-image {
+        .image {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+      .sm-feauter-top {
+        left: 280px;
+      }
+      .sm-feauter-bottom {
+        left: 405px;
+      }
+    }
+  }
+
+  .about-solution {
+    padding-bottom: 90px;
+    .solution-wrapper {
+      margin-bottom: 30px;
+
+      .solution-title.center {
+        display: inline-block;
+        max-width: 95%;
+        margin-bottom: 30px;
+      }
+    }
+    .section-title {
+      margin-bottom: 60px;
+      h2 {
+        font-size: 38px;
+        line-height: 52px;
+      }
+    }
+
+    .mask-group {
+      .mask1 {
+        top: -30px;
+        left: 35px;
+      }
+      .mask2 {
+        top: -30px;
+        right: 35px;
+      }
+    }
+  }
+  .about-skill {
+    &-image {
+      img {
+        margin-bottom: 30px;
+      }
+    }
+    &-wrapper {
+      .about-skill-pogressbar {
+        justify-content: space-around;
+        .round-wrapper {
+          margin: 0px;
+          .skill-text {
+            margin-top: 0px;
+            p {
+              padding-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-skill {
+    &-wrapper {
+      max-width: 100%;
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-skill {
+    padding: 120px 0px;
+    &-image {
+      display: none;
+    }
+  }
+
+  // Service
+  .about-us {
+    &.our-services {
+      padding: 60px 0px;
+      padding-bottom: 90px;
+    }
+    &-text {
+      margin-top: 30px;
+    }
+  }
+
+  // aboutsus
+  .about-solution {
+    .mask-group {
+      .mask1,
+      .mask2 {
+        display: none;
+      }
+    }
+  }
+
+  .about-us-image .image {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .about-skill {
+    &-wrapper {
+      .about-skill-pogressbar {
+        .round-wrapper {
+          margin: 30px 0px;
+        }
+      }
+    }
+  }
+
+  // About us
+  .about-us {
+    &-image {
+      .sm-feauter-top {
+        left: 220px;
+      }
+      .sm-feauter-bottom {
+        left: 335px;
+        bottom: -50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .about-us {
+    &-text {
+      .feature {
+        .icon {
+          border-radius: 0px;
+          padding: 15px;
+        }
+      }
+    }
+    &-image {
+      .image {
+        margin-top: 0px;
+      }
+    }
+  }
+  .about-solution {
+    margin: 0px;
+    border-radius: 0px;
+    .mask-group {
+      .mask1,
+      .mask2 {
+        width: 20%;
+      }
+    }
+    .solution-wrapper {
+      .solution-title {
+        h4 {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .about-skill {
+    padding: 60px 0px;
+    &-pogressbar {
+      flex-direction: column;
+      .round-wrapper {
+        margin: 15px 0px !important;
+      }
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: -15px;
+      img {
+        margin-bottom: 15px;
+        object-fit: contain;
+      }
+    }
+    &-title {
+      h2 {
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+    &-wrapper {
+      .about-skill-title {
+        margin-bottom: 0px;
+        h2 {
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  // Service
+  .about-us {
+    padding-top: 0px;
+    &.our-services {
+      .about-us-text {
+        .sub-heading {
+          h2 {
+            font-size: 28px;
+            line-height: 38px;
+            margin-bottom: 0px;
+          }
+        }
+        .primary__button {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    &-image {
+      .sm-feauter-bottom,
+      .sm-feauter-left,
+      .sm-feauter-top {
+        display: none;
+      }
+    }
+    &-text {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sub-heading {
+        margin-bottom: 15px;
+        h2 {
+          font-size: 22px;
+          line-height: 32px;
+          margin-bottom: 0px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      .alart-icon {
+        margin-right: 0px;
+      }
+      .alart-text p {
+        margin-right: 0px;
+        margin: 15px 0px;
+      }
+    }
+    .alart-boldtext {
+      margin-left: 0px;
+    }
+  }
+
+  .about-solution {
+    padding: 60px 0px;
+    padding-top: 90px;
+    .section-title {
+      margin-bottom: 30px;
+      h2 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    .solution-wrapper {
+      margin-bottom: 0px;
+      .solution-title {
+        &.center {
+          margin-bottom: 15px;
+          p {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .aboutus02-wrapper-list ul li {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .about-us {
+    &-text {
+      .alart {
+        flex-direction: column;
+        padding: 15px 50px;
+        &-icon {
+          margin-bottom: 10px;
+        }
+        &-text {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &-image {
+      .sm-feauter-bottom {
+        right: 0px;
+      }
+      .sm-feauter-left {
+        top: 140px;
+      }
+    }
+  }
+}
