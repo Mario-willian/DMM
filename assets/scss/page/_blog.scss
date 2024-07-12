@@ -35,7 +35,7 @@
           transition: 0.3s all linear;
 
           &:hover {
-            color: #ff465e;
+            color: #00B41F;
           }
         }
       }
@@ -52,7 +52,7 @@
 
           i {
             margin-right: 8px;
-            color: #ff465e;
+            color: #00B41F;
           }
         }
       }
@@ -66,7 +66,7 @@
             transition: 0.3s all linear;
 
             &:hover {
-              color: #ff465e;
+              color: #00B41F;
             }
           }
         }
@@ -76,7 +76,7 @@
 
           i {
             margin-right: 8px;
-            color: #ff465e;
+            color: #00B41F;
           }
         }
       }
@@ -118,7 +118,7 @@
       text-align: center;
       max-width: 625px;
       font-size: 36px;
-      color: #ff465e;
+      color: #00B41F;
     }
   }
 
@@ -208,14 +208,14 @@
             transition: 0.3s all linear;
             font-family: $gilroy-bold;
             &.active {
-              background-color: #ff465e;
+              background-color: #00B41F;
               color: #ffffff;
               &:hover {
-                background-color: #ff465e;
+                background-color: #00B41F;
               }
             }
             &:hover {
-              background-color: #ff465e;
+              background-color: #00B41F;
               color: #ffffff;
 
               i {
@@ -224,7 +224,7 @@
             }
 
             i {
-              color: #ff465e;
+              color: #00B41F;
               transition: 0.3s all linear;
             }
           }
@@ -264,7 +264,7 @@
 
         h6 {
           font-size: 16px;
-          color: #ff465e;
+          color: #00B41F;
         }
       }
     }
@@ -311,7 +311,7 @@
             font-size: 14px;
 
             a {
-              color: #ff465e;
+              color: #00B41F;
               margin-right: 4px;
             }
           }
@@ -331,7 +331,7 @@
       &-item {
         ul {
           .active {
-            color: #ff465e;
+            color: #00B41F;
           }
 
           li {
@@ -347,7 +347,7 @@
               transition: 0.3s all linear;
 
               &:hover {
-                color: #ff465e;
+                color: #00B41F;
               }
             }
           }
@@ -376,12 +376,12 @@
               transition: 0.3s all linear;
 
               &:hover {
-                color: #ff465e;
+                color: #00B41F;
               }
 
               i {
                 margin-right: 8px;
-                color: #ff465e;
+                color: #00B41F;
               }
             }
           }
@@ -435,7 +435,7 @@
               transition: 0.3s all linear;
 
               &:hover {
-                color: #ff465e;
+                color: #00B41F;
               }
             }
           }
@@ -454,7 +454,7 @@
         content: '';
         bottom: -3px;
         left: 0;
-        background-color: #ff465e;
+        background-color: #00B41F;
         width: 35px;
         height: 3px;
       }
@@ -478,7 +478,7 @@
     .article-info {
       .author {
         i {
-          color: #ff465e;
+          color: #00B41F;
         }
 
         span {
@@ -489,7 +489,7 @@
           a {
             font-family: $gilroy-medium !important;
             font-size: 16px !important;
-            color: #ff465e !important;
+            color: #00B41F !important;
             margin-left: 0 !important;
           }
         }
@@ -527,13 +527,13 @@
           transition: 0.3s all linear;
 
           &:hover {
-            color: #ff465e;
+            color: #00B41F;
           }
         }
 
         .active {
           margin-left: 3px;
-          color: #ff465e;
+          color: #00B41F;
         }
       }
 
@@ -546,7 +546,7 @@
         }
 
         .active {
-          color: #ff465e;
+          color: #00B41F;
         }
 
         a {
@@ -556,7 +556,7 @@
           transition: 0.3s all linear;
 
           &:hover {
-            color: #ff465e;
+            color: #00B41F;
           }
         }
       }
@@ -640,7 +640,7 @@
               a {
                 font-size: 16px;
                 font-family: $gilroy-medium;
-                color: #ff465e;
+                color: #00B41F;
 
                 i {
                   margin-right: 10px;
@@ -668,12 +668,12 @@
           border: 1px solid #dddddd;
 
           &:focus::-webkit-input-placeholder {
-            color: #ff465e;
+            color: #00B41F;
           }
 
           &:focus {
             box-shadow: none;
-            border-color: #ff465e;
+            border-color: #00B41F;
           }
         }
 
@@ -683,12 +683,12 @@
           resize: none;
 
           &:focus::-webkit-input-placeholder {
-            color: #ff465e;
+            color: #00B41F;
           }
 
           &:focus {
             box-shadow: none;
-            border-color: #ff465e;
+            border-color: #00B41F;
           }
         }
 
@@ -708,7 +708,7 @@
   &-quotes {
     padding: 30px;
     padding-bottom: 50px;
-    background-color: #ff465e;
+    background-color: #00B41F;
     border-radius: 10px;
     position: relative;
 
@@ -718,7 +718,7 @@
       bottom: 18%;
       left: 67%;
       transform: rotate(180deg) scale(-1, 1);
-      color: #ff465e;
+      color: #00B41F;
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       font-size: 30px;

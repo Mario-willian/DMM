@@ -154,9 +154,9 @@
         cursor: pointer;
         &.priceArea__Btninactive {
           background-color: transparent;
-          color: #ff465e;
+          color: #00B41F;
           &:hover {
-            background-color: #ff465e;
+            background-color: #00B41F;
             color: #fff;
           }
         }
@@ -167,7 +167,7 @@
     font-size: 20px;
     line-height: 32px;
     font-family: $gilroy-medium;
-    color: #ff465e;
+    color: #00B41F;
     margin-bottom: 15px;
   }
   &__price {
@@ -181,7 +181,7 @@
     }
   }
   &__planeFeatures {
-    border: 1px solid #ff465e;
+    border: 1px solid #00B41F;
     border-left: 0px;
     border-right: 0px;
     padding: 30px 0px;
@@ -194,7 +194,7 @@
       span {
         margin-right: 15px;
         i {
-          color: #ff465e;
+          color: #00B41F;
         }
       }
       p {
@@ -235,8 +235,8 @@
   }
 
   &__Btninactive {
-    color: #ff465e;
-    border: 2px solid #ff465e;
+    color: #00B41F;
+    border: 2px solid #00B41F;
     background-color: transparent;
     width: 165px;
     height: 50px;

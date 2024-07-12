@@ -5,7 +5,7 @@ $('.round')
     lineCap: 'round',
 
     fill: {
-      color: '#FF465E',
+      color: '#00B41F',
     },
     emptyFill: '#191C26',
   })
@@ -20,7 +20,7 @@ $('.round-1')
     lineCap: 'round',
 
     fill: {
-      color: '#FF465E',
+      color: '#00B41F',
     },
     emptyFill: '#FFDAE0',
   })

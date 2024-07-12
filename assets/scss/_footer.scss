@@ -50,8 +50,8 @@
 
   &-links {
     a {
-      border: 1px solid #ff465e;
-      color: #ff465e;
+      border: 1px solid #00B41F;
+      color: #00B41F;
       border-radius: 50%;
       height: 47px;
       width: 47px;
@@ -64,7 +64,7 @@
 
       &:hover {
         color: $white;
-        background-color: #ff465e;
+        background-color: #00B41F;
       }
     }
   }
@@ -284,7 +284,7 @@
       a {
         background-color: #29303e;
         &:hover {
-          background-color: #ff465e;
+          background-color: #00B41F;
         }
       }
     }
