@@ -25,6 +25,29 @@
 
         gtag('config', 'G-VM5LNZTM39');
         </script>
+        <!--UTM-->
+        <script>
+            const link = 'https://dmmservices.com.br';
+            function setBackRedirect(url) {
+              let urlBackRedirect = url;
+              urlBackRedirect = urlBackRedirect =
+                urlBackRedirect.trim() +
+                (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+                document.location.search.replace('?', '').toString();
+          
+              history.pushState({}, '', location.href);
+              history.pushState({}, '', location.href);
+              history.pushState({}, '', location.href);
+          
+              window.addEventListener('popstate', () => {
+                console.log('onpopstate', urlBackRedirect);
+                setTimeout(() => {
+                  location.href = urlBackRedirect;
+                }, 1);
+              });
+            }
+            setBackRedirect(link);
+          </script>
     </head>
     <body>
             <!-- End Meta Pixel Code -->
@@ -80,9 +103,32 @@
                 </aside>
             </div>
         </header>
+        <!--WhatsApp-->
+        <a href="https://api.whatsapp.com/send?phone=5531971659284&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20gentileza." target="_blank" class="whatsapp-float">
+            <img src="assets/img/logo/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                width: 110px;
+                height: 110px;
+                bottom: 20px;
+                right: 20px;
+                border-radius: 50px;
+                background-color: white;
+                text-align: center;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+            }
+            .whatsapp-icon {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+            }
+        </style>
         <!-- Main Contents -->
         <main>
-            <!--  Banner Principa -->
+            <!--  Banner Principal -->
             <section class="bannerArea02">
                 <div class="container custom-container01">
                     <div class="row">
