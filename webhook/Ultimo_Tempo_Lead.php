@@ -11,11 +11,11 @@ $hour = date("H"); // Apenas a hora atual (em 24h)
 
 // Lógica para definir "manhã", "tarde" ou "noite"
 if ($hour >= 5 && $hour < 12) {
-    $period = "dia";
+    $period = "bom dia";
 } elseif ($hour >= 12 && $hour < 18) {
-    $period = "tarde";
+    $period = "boa tarde";
 } else {
-    $period = "noite";
+    $period = "boa noite";
 }
 
 // Retornar a resposta em JSON
