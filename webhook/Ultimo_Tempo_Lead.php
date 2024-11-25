@@ -1,18 +1,21 @@
 <?php
 header('Content-Type: application/json');
 
+// Configurar o fuso horário
+date_default_timezone_set('America/Sao_Paulo'); // Fuso horário de Brasília
+
 // Obter a data atual e hora
 $today = date("Y-m-d");
 $current_time = date("H:i:s"); // Hora atual
 $timestamp = time(); // Timestamp Unix (inteiro)
 
 // Determinar o período do dia
-$hour = date("H"); // Apenas a hora atual (em 24h)
+$hour = (int) date("H"); // Converter a hora para inteiro
 
 // Lógica para definir "manhã", "tarde" ou "noite"
 if ($hour >= 5 && $hour < 12) {
     $period = "bom dia";
-} elseif ($hour >= 12 && $hour < 18) {
+} elseif ($hour >= 12 && $hour < 19) { // Ajustado para incluir até 18:59
     $period = "boa tarde";
 } else {
     $period = "boa noite";
