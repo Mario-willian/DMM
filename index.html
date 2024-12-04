@@ -25,29 +25,6 @@
 
         gtag('config', 'G-VM5LNZTM39');
         </script>
-        <!--UTM-->
-        <script>
-            const link = 'https://dmmservices.com.br';
-            function setBackRedirect(url) {
-              let urlBackRedirect = url;
-              urlBackRedirect = urlBackRedirect =
-                urlBackRedirect.trim() +
-                (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-                document.location.search.replace('?', '').toString();
-          
-              history.pushState({}, '', location.href);
-              history.pushState({}, '', location.href);
-              history.pushState({}, '', location.href);
-          
-              window.addEventListener('popstate', () => {
-                console.log('onpopstate', urlBackRedirect);
-                setTimeout(() => {
-                  location.href = urlBackRedirect;
-                }, 1);
-              });
-            }
-            setBackRedirect(link);
-          </script>
     </head>
     <body>
             <!-- End Meta Pixel Code -->
@@ -305,6 +282,7 @@
                             <div id="servicos"></div>
                         </section>
                         <!-- Resultados Reais -->
+                         <!--
             <section class="our-work-process">
                 <div class="container">
                     <div class="section-title text-center" data-aos="fade-up">
@@ -354,6 +332,7 @@
                 </div>
                 <div id="gestao"></div>
             </section>
+            -->
             <!-- Primeira Reunião -->
             <section class="our-work-process">
                 <div class="container">
