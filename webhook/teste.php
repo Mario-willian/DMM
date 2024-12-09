@@ -7,25 +7,22 @@ if (file_exists($logFile)) {
     // Lê o conteúdo do log
     $logContent = file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-    // Obtém a última linha do log, que deve conter o último payload recebido
-    $lastEntry = end($logContent);
+    // Procura a última linha válida que contenha dados estruturados
+    for ($i = count($logContent) - 1; $i >= 0; $i--) {
+        $line = $logContent[$i];
 
-    // Verifica se a última entrada é válida (não está vazia)
-    if ($lastEntry) {
-        // Tenta decodificar o JSON da última linha (caso seja JSON)
-        $jsonData = json_decode($lastEntry, true);
+        // Tenta decodificar a linha como JSON
+        $jsonData = json_decode($line, true);
 
         if ($jsonData) {
-            // Retorna o último payload como JSON
+            // Retorna o último JSON válido
             echo json_encode($jsonData);
-        } else {
-            // Se a última linha não for JSON, retorna o texto como está
-            echo json_encode(["status" => "success", "message" => $lastEntry]);
+            exit;
         }
-    } else {
-        // Log está vazio
-        echo json_encode(["status" => "error", "message" => "Log vazio. Nenhum dado disponível."]);
     }
+
+    // Se não encontrar JSON válido, retorna mensagem de erro
+    echo json_encode(["status" => "error", "message" => "Nenhum dado JSON válido encontrado no log."]);
 } else {
     // Arquivo de log não encontrado
     echo json_encode(["status" => "error", "message" => "Arquivo de log não encontrado."]);
