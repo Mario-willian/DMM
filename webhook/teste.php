@@ -1,18 +1,33 @@
 <?php
-// Recebe o JSON enviado pelo Google Apps Script
-$data = json_decode(file_get_contents('php://input'), true);
+// Caminho do arquivo de log
+$logFile = "log.txt";
 
-// Log do payload recebido
-file_put_contents("log.txt", "Payload recebido: " . print_r($data, true) . PHP_EOL, FILE_APPEND);
+// Verifica se o arquivo de log existe
+if (file_exists($logFile)) {
+    // Lê o conteúdo do log
+    $logContent = file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-// Retorna exatamente o payload recebido em JSON, como no log
-if ($data && isset($data['phone']) && isset($data['name']) && isset($data['tags'])) {
-    echo json_encode($data); // Retorna os dados recebidos no formato JSON
+    // Obtém a última linha do log, que deve conter o último payload recebido
+    $lastEntry = end($logContent);
+
+    // Verifica se a última entrada é válida (não está vazia)
+    if ($lastEntry) {
+        // Tenta decodificar o JSON da última linha (caso seja JSON)
+        $jsonData = json_decode($lastEntry, true);
+
+        if ($jsonData) {
+            // Retorna o último payload como JSON
+            echo json_encode($jsonData);
+        } else {
+            // Se a última linha não for JSON, retorna o texto como está
+            echo json_encode(["status" => "success", "message" => $lastEntry]);
+        }
+    } else {
+        // Log está vazio
+        echo json_encode(["status" => "error", "message" => "Log vazio. Nenhum dado disponível."]);
+    }
 } else {
-    // Retorna erro se os campos obrigatórios estiverem ausentes
-    echo json_encode([
-        "status" => "error",
-        "message" => "Dados inválidos ou incompletos. Campos obrigatórios: phone, name, tags"
-    ]);
+    // Arquivo de log não encontrado
+    echo json_encode(["status" => "error", "message" => "Arquivo de log não encontrado."]);
 }
 ?>
