@@ -1,22 +1,24 @@
 <?php
-// Recebe o JSON enviado pelo Google Apps Script ou outro serviço
+// Recebe o JSON enviado pelo Google Apps Script
 $data = json_decode(file_get_contents('php://input'), true);
 
-// Verifica se os dados foram enviados corretamente
-if (isset($data['phone']) && isset($data['message'])) {
-    $phone = $data['phone'];
-    $message = $data['message'];
+// Verifica se os dados esperados foram enviados
+if (isset($data['phone']) && isset($data['name']) && isset($data['tags'])) {
+    $phone = $data['phone']; // Número de telefone
+    $name = $data['name'];   // Nome do contato
+    $tags = $data['tags'];   // Etiquetas associadas
 
     // Monta o JSON para enviar ao BotConversa
     $botconversaData = [
         "phone" => $phone,
-        "message" => $message
+        "name" => $name,
+        "tags" => $tags
     ];
 
     // URL do webhook do BotConversa
     $url = "https://api.botconversa.com/webhook";
 
-    // Envia os dados ao BotConversa
+    // Configurações da requisição HTTP
     $options = [
         "http" => [
             "header" => "Content-Type: application/json\r\n",
@@ -25,12 +27,14 @@ if (isset($data['phone']) && isset($data['message'])) {
         ],
     ];
 
+    // Envia os dados ao webhook do BotConversa
     $context = stream_context_create($options);
     $response = file_get_contents($url, false, $context);
 
-    // Retorna o resultado para o Google Apps Script
+    // Retorna o resultado da requisição
     echo json_encode(["status" => "success", "response" => $response]);
 } else {
-    echo json_encode(["status" => "error", "message" => "Dados inválidos."]);
+    // Retorna um erro se os dados não estiverem completos
+    echo json_encode(["status" => "error", "message" => "Dados inválidos. Campos obrigatórios: phone, name, tags"]);
 }
 ?>
