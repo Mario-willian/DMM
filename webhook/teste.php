@@ -3,7 +3,7 @@
 $data = json_decode(file_get_contents('php://input'), true);
 
 // Log do payload recebido (para depuração, remova em produção)
-file_put_contents("log.txt", json_encode($data) . PHP_EOL, FILE_APPEND);
+file_put_contents("log.txt", print_r($data, true) . PHP_EOL, FILE_APPEND);
 
 // Verifica se os campos esperados foram enviados
 if (isset($data['phone']) && isset($data['name']) && isset($data['tags'])) {
@@ -36,7 +36,8 @@ if (isset($data['phone']) && isset($data['name']) && isset($data['tags'])) {
     // Retorna o resultado da requisição
     echo json_encode(["status" => "success", "response" => $response]);
 } else {
-    // Retorna um erro se os campos obrigatórios não forem encontrados
+    // Log de erro para depuração
+    file_put_contents("log.txt", "Erro: Dados inválidos: " . print_r($data, true) . PHP_EOL, FILE_APPEND);
     echo json_encode(["status" => "error", "message" => "Dados inválidos. Campos obrigatórios: phone, name, tags"]);
 }
 ?>
