@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 date_default_timezone_set('America/Sao_Paulo'); // Fuso horário de Brasília
 
 // Obter a data atual e hora
-$today = date("d/m/Y");
+$today = date("d/m");
 $current_time = date("H:i:s"); // Hora atual
 $timestamp = time(); // Timestamp Unix (inteiro)
 
