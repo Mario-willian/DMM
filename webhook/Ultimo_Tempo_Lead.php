@@ -5,7 +5,8 @@ header('Content-Type: application/json');
 date_default_timezone_set('America/Sao_Paulo'); // Fuso horário de Brasília
 
 // Obter a data atual e hora
-$today = date("d/m");
+$today = date("d/m/Y");
+$today2 = date("d/m");
 $current_time = date("H:i:s"); // Hora atual
 $timestamp = time(); // Timestamp Unix (inteiro)
 
@@ -26,6 +27,7 @@ echo json_encode([
     "success" => true,
     "data" => [
         "dataAtual" => $today,
+        "dataAtual2" => $today,
         "horaAtual" => $current_time,
         "timestamp" => $timestamp, // Valor inteiro para comparações
         "periodo" => $period // Manhã, Tarde ou Noite
