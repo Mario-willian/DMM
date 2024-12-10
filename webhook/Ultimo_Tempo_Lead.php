@@ -27,7 +27,7 @@ echo json_encode([
     "success" => true,
     "data" => [
         "dataAtual" => $today,
-        "dataAtual2" => $today,
+        "dataAtual2" => $today2,
         "horaAtual" => $current_time,
         "timestamp" => $timestamp, // Valor inteiro para comparações
         "periodo" => $period // Manhã, Tarde ou Noite
